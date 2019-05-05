@@ -1,0 +1,6 @@
+[user]
+    name = William Brafford
+    email = william.brafford@elastic.co
+
+[alias]
+    pr = "!f() { git fetch origin pull/$1/head:pr/$1; }; f"

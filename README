@@ -1,0 +1,6 @@
+My configuration files.
+
+Based on https://github.com/imotov/dotfiles, which was in turn based
+on https://github.com/dakrone/dakrone-dotfiles.
+
+Note: .bash_profile expects that git completions have been installed.

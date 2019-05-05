@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cp -f -p ~/.dotfiles/zshrc        ~/.zshrc
+cp -f -p ~/.dotfiles/bash_profile ~/.bash_profile
+cp -f -p ~/.dotfiles/gitconfig    ~/.gitconfig

@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# Usage
+# $ curl -sk https://raw.githubusercontent.com/williamrandolph/dotfiles/master/bootstrap | zsh
+#
+# borrowed from github.com/imotov/dotfiles
+
+rm -rf ~/.oh-my-zsh
+rm -rf ~/.dotfiles
+git clone -q git://github.com/rubbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone -q https://github.com/williamrandolph/dotfiles.git ~/.dotfiles
+
+. ~/.dotfiles/push
+
+pushd ~/.dotfiles
+# set proper url for .dotfiles remote repository
+git remote set-url origin git@github.com:williamrandolph/dotfiles.git
+echo "Done."
+
